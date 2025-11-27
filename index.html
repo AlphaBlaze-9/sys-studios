@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SYS Studios | Digital Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                400: '#38bdf8',
+                500: '#0ea5e9', // Sky 500
+                600: '#0284c7',
+                900: '#0c4a6e',
+                950: '#082f49',
+              },
+              accent: {
+                400: '#a78bfa',
+                500: '#8b5cf6', // Violet 500
+                600: '#7c3aed',
+                900: '#4c1d95',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.6s ease-out forwards',
+              'slide-up': 'slideUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 8s ease-in-out infinite',
+              'shimmer': 'shimmer 8s linear infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(30px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              shimmer: {
+                '0%': { backgroundPosition: '200% 0' },
+                '100%': { backgroundPosition: '-200% 0' },
+              }
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617; /* Slate 950 */
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+      .glass-card {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      
+      /* Uiverse Inspired Elements */
+      
+      /* Button: Liquid Gradient */
+      .btn-uiverse {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(14,165,233,1) 0%, rgba(139,92,246,1) 100%);
+        border: none;
+        color: white;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      .btn-uiverse:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+      }
+      .btn-uiverse::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(90deg, rgba(139,92,246,1) 0%, rgba(14,165,233,1) 100%);
+        z-index: -1;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+      }
+      .btn-uiverse:hover::before {
+        opacity: 1;
+      }
+
+      /* Input: Focus Glow */
+      .input-uiverse {
+        background: rgba(15, 23, 42, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .input-uiverse:focus {
+        border-color: #0ea5e9;
+        background: rgba(15, 23, 42, 0.8);
+        box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1);
+        outline: none;
+      }
+      .input-uiverse::placeholder {
+        color: #475569;
+      }
+
+      /* Card: Hover Reveal */
+      .card-hover-effect {
+        transition: all 0.4s ease;
+      }
+      .card-hover-effect:hover {
+        border-color: rgba(255, 255, 255, 0.15);
+        background: rgba(15, 23, 42, 0.8);
+        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+      }
+      
+      .glass-card-hover {
+         transition: all 0.3s ease;
+      }
+      .glass-card-hover:hover {
+        background: rgba(30, 41, 59, 0.4);
+        backdrop-filter: blur(16px);
+        border-color: rgba(255,255,255,0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
