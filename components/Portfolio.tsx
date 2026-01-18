@@ -58,7 +58,7 @@ export const Portfolio: React.FC = () => {
 
               <div className="mt-10 flex items-center gap-4">
                 <a
-                  href="https://firstaidforall.netlify.app/"
+                  href="https://first-aidforall.org"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(14,165,233,0.1)] hover:bg-brand-500/15 transition"
@@ -81,7 +81,7 @@ export const Portfolio: React.FC = () => {
                   </svg>
                 </a>
 
-                <span className="text-slate-500 text-sm font-light">https://firstaidforall.netlify.app/</span>
+
               </div>
             </div>
 
@@ -149,9 +149,7 @@ export const Portfolio: React.FC = () => {
                   </svg>
                 </a>
 
-                <span className="text-slate-500 text-sm font-light">
-                  https://ssamarthhm2009.wixsite.com/lightuplives-copy
-                </span>
+
               </div>
             </div>
 
