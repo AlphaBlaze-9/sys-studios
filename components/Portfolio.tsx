@@ -4,6 +4,7 @@ import { LayoutIcon } from './Icons';
 // place images in: src/assets/
 import HomePageSS from '../assets/HomePageSS.png';
 import LightUpLivesHomePage from '../assets/LightUpLivesHomePage.png';
+import HoustonHandsOfHopeHome from '../assets/HoustonHandsOfHopeHome.png';
 
 export const Portfolio: React.FC = () => {
   return (
@@ -150,6 +151,72 @@ export const Portfolio: React.FC = () => {
                 </a>
 
 
+              </div>
+            </div>
+
+            {/* Decorative blurred blobs inside card */}
+            <div className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"></div>
+            <div
+              className="absolute -bottom-[20%] -right-[10%] w-[600px] h-[600px] bg-accent-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"
+              style={{ animationDelay: '1.5s' }}
+            ></div>
+          </div>
+
+          {/* Houston Hands of Hope */}
+          <div className="relative w-full h-[740px] rounded-[2rem] border border-white/5 bg-slate-900/40 backdrop-blur-xl overflow-hidden group animate-slide-up shadow-2xl">
+            <div className="absolute inset-0 p-8 sm:p-10 z-20 flex flex-col">
+              <div className="flex items-start justify-between gap-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-semibold tracking-wide">
+                    Live Website
+                  </div>
+                  <h3 className="mt-5 text-4xl font-bold text-white tracking-tight">Houston Hands of Hope</h3>
+                  <p className="mt-4 text-slate-400 max-w-xl text-lg font-light leading-relaxed">
+                    A student-led non-profit dedicated to fighting hunger in Houston. We collect donations and mobilize
+                    volunteers to distribute food to local banks, uniting hands to defeat hunger.
+                  </p>
+                </div>
+
+                <div className="w-16 h-16 rounded-2xl bg-slate-800/50 border border-white/10 flex items-center justify-center shadow-2xl backdrop-blur-md">
+                  <LayoutIcon className="w-8 h-8 text-brand-400" />
+                </div>
+              </div>
+
+              {/* Homepage Screenshot */}
+              <div className="mt-10 flex-1 rounded-2xl border border-white/10 bg-slate-950/40 overflow-hidden relative">
+                <img
+                  src={HoustonHandsOfHopeHome}
+                  alt="Houston Hands of Hope homepage screenshot"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
+              </div>
+
+              <div className="mt-10 flex items-center gap-4">
+                <a
+                  href="https://houstonhandsofhope.wixsite.com/houstonhandsofhope"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(14,165,233,0.1)] hover:bg-brand-500/15 transition"
+                >
+                  Visit Site
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    className="w-4 h-4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 17L17 7M17 7H9M17 7V15"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
 
