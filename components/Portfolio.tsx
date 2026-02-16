@@ -1,10 +1,11 @@
 import React from 'react';
-import { LayoutIcon } from './Icons';
+import { LayoutIcon, SmartphoneIcon } from './Icons';
 
 // place images in: src/assets/
 import HomePageSS from '../assets/HomePageSS.png';
 import LightUpLivesHomePage from '../assets/LightUpLivesHomePage.png';
 import HoustonHandsOfHopeHome from '../assets/HoustonHandsOfHopeHome.png';
+import VandeHome from '../assets/VandeHome.png';
 
 export const Portfolio: React.FC = () => {
   return (
@@ -224,6 +225,63 @@ export const Portfolio: React.FC = () => {
             <div className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"></div>
             <div
               className="absolute -bottom-[20%] -right-[10%] w-[600px] h-[600px] bg-accent-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"
+              style={{ animationDelay: '1.5s' }}
+            ></div>
+          </div>
+
+          {/* Vande Wellness */}
+          <div className="relative w-full h-[740px] rounded-[2rem] border border-white/5 bg-slate-900/40 backdrop-blur-xl overflow-hidden group animate-slide-up shadow-2xl">
+            <div className="absolute inset-0 p-8 sm:p-10 z-20 flex flex-col">
+              <div className="flex items-start justify-between gap-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-semibold tracking-wide">
+                    Mobile Application
+                  </div>
+                  <h3 className="mt-5 text-4xl font-bold text-white tracking-tight">Vande Wellness</h3>
+                  <p className="mt-4 text-slate-400 max-w-xl text-lg font-light leading-relaxed">
+                    A comprehensive React Native mobile application for Ayurvedic wellness featuring service bookings, a product shop for 35 Vande Herbals, and event management.
+                  </p>
+                </div>
+
+                <div className="w-16 h-16 rounded-2xl bg-slate-800/50 border border-white/10 flex items-center justify-center shadow-2xl backdrop-blur-md">
+                  <SmartphoneIcon className="w-8 h-8 text-brand-400" />
+                </div>
+              </div>
+
+              {/* Homepage Screenshot - iPhone Mockup Style */}
+              <div className="mt-4 flex-1 flex items-center justify-center relative">
+                <div className="relative w-[180px] sm:w-[200px] aspect-[1/2] rounded-[2rem] border-[6px] border-slate-900 shadow-2xl overflow-hidden bg-slate-950 ring-1 ring-white/10">
+                  {/* Dynamic Island / Notch placeholder */}
+                  <div className="absolute top-0 inset-x-0 h-7 bg-slate-900 z-20 flex justify-center">
+                    <div className="w-24 h-5 bg-black rounded-b-xl" />
+                  </div>
+
+                  <img
+                    src={VandeHome}
+                    alt="Vande Wellness app screenshot"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+
+                  {/* Glass reflection effect */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10" />
+                </div>
+              </div>
+
+              <div className="-mt-1 flex items-center gap-4">
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(14,165,233,0.1)] hover:bg-brand-500/15 transition"
+                >
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+
+            {/* Decorative blurred blobs inside card */}
+            <div className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] bg-[#2E5C55]/20 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"></div>
+            <div
+              className="absolute -bottom-[20%] -right-[10%] w-[600px] h-[600px] bg-[#D4AF37]/20 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"
               style={{ animationDelay: '1.5s' }}
             ></div>
           </div>
