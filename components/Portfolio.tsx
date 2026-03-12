@@ -149,7 +149,7 @@ export const Portfolio: React.FC = () => {
                   <div className="flex items-start justify-between gap-6">
                     <div>
                       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-semibold tracking-wide">
-                        In Progress
+                        Live Website
                       </div>
                       <h3 className="mt-3 text-2xl xl:text-3xl font-bold text-white tracking-tight">Bridging Destiny</h3>
                       <p className="mt-2 text-slate-400 max-w-xl text-base font-light leading-relaxed">
@@ -165,8 +165,11 @@ export const Portfolio: React.FC = () => {
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
                   </div>
                   <div className="mt-4 flex items-center gap-4">
-                    <a href="#" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(14,165,233,0.1)] hover:bg-brand-500/15 transition">
-                      Coming Soon
+                    <a href="https://bridgingdestiny.org/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(14,165,233,0.1)] hover:bg-brand-500/15 transition">
+                      View Site
+                      <svg aria-hidden="true" viewBox="0 0 24 24" className="w-4 h-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
                     </a>
                   </div>
                 </div>
