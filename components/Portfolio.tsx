@@ -120,7 +120,7 @@ export const Portfolio: React.FC = () => {
                       </div>
                       <h3 className="mt-3 text-2xl xl:text-3xl font-bold text-white tracking-tight">Area 8</h3>
                       <p className="mt-2 text-slate-400 max-w-xl text-base font-light leading-relaxed">
-                        A dynamic web platform showcasing projects, initiatives, and community engagement for Area 8.
+                        The official digital hub for FBLA Area 8, designed to connect chapters, highlight regional events, and empower the next generation of business leaders.
                       </p>
                     </div>
                     <div className="w-16 h-16 rounded-2xl bg-slate-800/50 border border-white/10 flex items-center justify-center shadow-2xl backdrop-blur-md">
