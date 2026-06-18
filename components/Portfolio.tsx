@@ -8,6 +8,8 @@ import HoustonHandsOfHopeHome from '../assets/HoustonHandsOfHopeHome.png';
 import VandeHome from '../assets/VandeHome.png';
 import Code4FeedersHome from '../assets/Code4Feeders.png';
 import BridgingDestinyHome from '../assets/Bridging_Destiny.png';
+import YouthInVestHome from '../assets/YouthInVestHome.png';
+import Area8Home from '../assets/Area8Home.png';
 
 
 type Tab = 'websites' | 'apps';
@@ -73,6 +75,74 @@ export const Portfolio: React.FC = () => {
           {/* ── WEBSITES ─────────────────────────────────────────── */}
           {activeTab === 'websites' && (
             <>
+              {/* Youth In Vest */}
+              <div className="relative w-full h-[580px] rounded-[2rem] border border-white/5 bg-slate-900/40 backdrop-blur-xl overflow-hidden group animate-slide-up shadow-2xl">
+                <div className="absolute inset-0 p-6 sm:p-8 z-20 flex flex-col">
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-semibold tracking-wide">
+                        Live Website
+                      </div>
+                      <h3 className="mt-3 text-2xl xl:text-3xl font-bold text-white tracking-tight">Youth In Vest</h3>
+                      <p className="mt-2 text-slate-400 max-w-xl text-base font-light leading-relaxed">
+                        A modern digital experience empowering youth through financial literacy and investment education.
+                      </p>
+                    </div>
+                    <div className="w-16 h-16 rounded-2xl bg-slate-800/50 border border-white/10 flex items-center justify-center shadow-2xl backdrop-blur-md">
+                      <LayoutIcon className="w-8 h-8 text-brand-400" />
+                    </div>
+                  </div>
+                  <div className="mt-4 flex-1 rounded-2xl border border-white/10 bg-slate-950/40 overflow-hidden relative">
+                    <img src={YouthInVestHome} alt="Youth In Vest homepage screenshot" className="w-full h-full object-cover" loading="lazy" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
+                  </div>
+                  <div className="mt-4 flex items-center gap-4">
+                    <a href="https://youth-in-vest-website.vercel.app" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(14,165,233,0.1)] hover:bg-brand-500/15 transition">
+                      Visit Site
+                      <svg aria-hidden="true" viewBox="0 0 24 24" className="w-4 h-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"></div>
+                <div className="absolute -bottom-[20%] -right-[10%] w-[600px] h-[600px] bg-accent-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow" style={{ animationDelay: '1.5s' }}></div>
+              </div>
+
+
+              {/* Area 8 */}
+              <div className="relative w-full h-[580px] rounded-[2rem] border border-white/5 bg-slate-900/40 backdrop-blur-xl overflow-hidden group animate-slide-up shadow-2xl">
+                <div className="absolute inset-0 p-6 sm:p-8 z-20 flex flex-col">
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300 text-xs font-semibold tracking-wide">
+                        Live Website
+                      </div>
+                      <h3 className="mt-3 text-2xl xl:text-3xl font-bold text-white tracking-tight">Area 8</h3>
+                      <p className="mt-2 text-slate-400 max-w-xl text-base font-light leading-relaxed">
+                        A dynamic web platform showcasing projects, initiatives, and community engagement for Area 8.
+                      </p>
+                    </div>
+                    <div className="w-16 h-16 rounded-2xl bg-slate-800/50 border border-white/10 flex items-center justify-center shadow-2xl backdrop-blur-md">
+                      <LayoutIcon className="w-8 h-8 text-brand-400" />
+                    </div>
+                  </div>
+                  <div className="mt-4 flex-1 rounded-2xl border border-white/10 bg-slate-950/40 overflow-hidden relative">
+                    <img src={Area8Home} alt="Area 8 homepage screenshot" className="w-full h-full object-cover" loading="lazy" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
+                  </div>
+                  <div className="mt-4 flex items-center gap-4">
+                    <a href="https://area-8-website.vercel.app" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(14,165,233,0.1)] hover:bg-brand-500/15 transition">
+                      Visit Site
+                      <svg aria-hidden="true" viewBox="0 0 24 24" className="w-4 h-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow"></div>
+                <div className="absolute -bottom-[20%] -right-[10%] w-[600px] h-[600px] bg-accent-500/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen animate-pulse-slow" style={{ animationDelay: '1.5s' }}></div>
+              </div>
               {/* Code4Feeders */}
               <div className="relative w-full h-[580px] rounded-[2rem] border border-white/5 bg-slate-900/40 backdrop-blur-xl overflow-hidden group animate-slide-up shadow-2xl">
                 <div className="absolute inset-0 p-6 sm:p-8 z-20 flex flex-col">
